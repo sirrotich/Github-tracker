@@ -1,27 +1,38 @@
-# GithubTracker
+# project Title
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+Github-tracker
 
-## Development server
+## Getting started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Git clone this repository from https://github.com/sirrotich/Github-tracker.git.
+2. Make sure you have node and npm installed
+3. Run npm link in your terminal, this will download and save all required modules.
+4. Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+5. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6. Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Code scaffolding
+## Technologies used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Angular
+2. TypeScript
+3. HTML
+4. CSS
 
-## Build
+## Bugs and issues 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+There are no bugs in tis project and feel free share with me any challenge through my email adddres 
+rotichtitus12@gmail.com
 
-## Running unit tests
+## Contributions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Running end-to-end tests
+Please make sure to update tests as appropriate.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## License 
 
-## Further help
+This software is Licenced under MIT Licence Copyright 2019 https://opensource.org
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##Acknowledgement 
+
+Moringa school for guidance through technologies used
