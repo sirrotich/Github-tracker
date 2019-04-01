@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   user: Users;
   constructor(private profileService: ProfileService) { }
 
+
   ngOnInit() {
   }
 }
