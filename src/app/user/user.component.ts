@@ -36,7 +36,7 @@ export class UserComponent implements OnInit {
     this.profileService.getRepoInfo(this.userName);
     this.profileService.getUserInfo();
     this.user = this.profileService.user;
-    // console.log(this.profileService.repo.name);
+     // console.log(this.profileService.repo.name);
   }
 
 }
