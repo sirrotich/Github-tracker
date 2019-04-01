@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 
 import { UserComponent } from './../user/user.component';
-
 // import { ProfileComponent } from '../profile/profile.component';
 
 // Defining routes
