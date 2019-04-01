@@ -12,7 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import {RoutingModule} from './routing/routing.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
