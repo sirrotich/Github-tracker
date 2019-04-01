@@ -1,6 +1,6 @@
 export class Users {
 // tslint:disable-next-line: variable-name
-    constructor(public login: string, public avatar_url: string, public followers_url: string,
+     constructor(public login: string, public avatar_url: string, public followers_url: string,
 // tslint:disable-next-line: variable-name
                 public following_url: string,
 // tslint:disable-next-line: variable-name
