@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+#header {
+    text-align: center;
+    margin-top: 300px;
+    /* background-image: url("https://mdbootstrap.com/img/Others/bf_net_automation.png"); */
+}
+.us {
+    background-image: url("https://xpchronicles.files.wordpress.com/2014/06/simcity.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.panel-title {
+    color: white;
+}
+.titl {
+    color: white;
+}
+body {
+    background-image: url("https://cdn1.cloudpro.co.uk/sites/cloudprod7/files/2018/09/github_shutterstock_702417037.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.int {
+    color: white;
+}

@@ -1,0 +1,67 @@
+<div class="conatiner">
+<div class="us" >
+
+  <form (keyup)="findProfile()" #userForm="ngForm">
+    <div class="form-group">
+
+        <input type="text" placeholder="Search User" [(ngModel)]="userName" name="userName">
+    </div>
+    <button type="Submit" class="btn btn-info btn-lg">Search User</button>
+</form>
+
+<br>
+<br>
+<br>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{ user.login}}</h3>
+      <h4 class="titl">"Lets innovate"</h4>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-3 " > 
+          <br>
+          <br>
+          <br>
+          <img src="{{ user.avatar_url }}" class="rounded-circle z-depth-2" alt="user Image" width="300px"> 
+        </div>
+
+        <div class=" col-sm-5 ">
+            <span class="badge badge-secondary">{{user.followers_url}} Followers</span>
+            <span class="badge badge-primary">{{user.following_url}} Following</span>
+            <span class="badge badge-info">{{user.public_gists}} public gists</span>
+            <span class="badge badge-success">{{user.repos_url}} public repos</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul class="list-group" *ngIf="user">
+                <li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
+                <li class="list-group-item"><strong>Email: </strong>{{user.mail}}</li>
+                <li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
+                <li class="list-group-item"><strong>Public repos: </strong>{{user.repos_url}}</li>
+                <li class="list-group-item"><strong>Created at: </strong>{{user.createdAt}}</li>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+          <div>
+         
+              
+          </div>
+  
+      </div>
+        
+          <a href="{{user.repo_url}}" class="btn btn-primary">View User on Github</a>
+        </div>
+      </div>
+    
+         <div class="panel-footer">
+           <p style="font-size: 12px;">Powered by GithubAPI</p>
+            </div>
+
+  </div>
+</div>
+</div>
