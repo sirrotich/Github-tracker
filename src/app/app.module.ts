@@ -12,13 +12,15 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import {RoutingModule} from './routing/routing.module';
 import { UserDirective } from './user.directive';
+import { TimeAgoPipe } from './time-ago.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserComponent,
-    UserDirective
+    UserDirective,
+    TimeAgoPipe
 
   ],
   imports: [
