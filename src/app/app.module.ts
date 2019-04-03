@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import {RoutingModule} from './routing/routing.module';
+import { UserDirective } from './user.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    UserComponent
+    UserComponent,
+    UserDirective
 
   ],
   imports: [
