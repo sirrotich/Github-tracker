@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Users } from './users';
 import { environment } from '../environments/environment';
+import { Repository } from './repos';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
   user: Users;
+  repo: Repository;
   newRepo: any;
   newUser: any;
   private userName: string;
