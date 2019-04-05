@@ -13,14 +13,24 @@ import { UserComponent } from './user/user.component';
 import {RoutingModule} from './routing/routing.module';
 import { UserDirective } from './user.directive';
 import { TimeAgoPipe } from './time-ago.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { Routes } from '@angular/router';
 
+
+
+const routes: Routes = [
+  {path: 'user', component: UserComponent},
+  {path: '', redirectTo: '/user', pathMatch: 'full'},
+  {path: '**', component: NotFoundComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserComponent,
     UserDirective,
-    TimeAgoPipe
+    TimeAgoPipe,
+    NotFoundComponent
 
   ],
   imports: [

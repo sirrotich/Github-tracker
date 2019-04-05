@@ -3,19 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { Users } from './users';
 import { environment } from '../environments/environment';
 import { Repository } from './repos';
+import { UserComponent } from './user/user.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
-  user: Users;
-  repo: Repository;
-  newRepo: any;
-  newUser: any;
-  private userName: string;
-
-  // private clientId = '8cbc60b506c591f98a0c';
-  private accessToken = ' bf382007a8b42c5cae2c6ba3506e2bc40f880919';
   // private clientSecret = '1941e97b08b54d07e4094c737f92b69509724391';
 
   constructor(private http: HttpClient) {
@@ -25,6 +18,27 @@ export class ProfileService {
     console.log('Service Works!');
     this.userName = 'sirrotich';
 
+  }
+// tslint:disable-next-line: member-ordering
+  user: Users;
+  repo: Repository;
+  newRepo: any;
+  newUser: any;
+  private userName: string;
+
+  // private clientId = '8cbc60b506c591f98a0c';
+  private accessToken = ' bf382007a8b42c5cae2c6ba3506e2bc40f880919';
+
+  getGoals() {
+    return Users;
+  }
+  getGoal(id) {
+    for (const user of this.newUser) {
+// tslint:disable-next-line: triple-equals
+        if (user.id == id) {
+            return user;
+        }
+    }
   }
   getUserInfo() {
 

@@ -5,6 +5,8 @@ import { HttpClient } from '@angular/common/http';
 import { Users } from '../users';
 
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -13,11 +15,12 @@ import { FormsModule } from '@angular/forms';
   providers: [ProfileService]
 })
 export class UserComponent implements OnInit {
+  [x: string]: any;
   user: Users;
   userRepos: any;
   userName: string;
 
-  constructor(private profileService: ProfileService) {
+  constructor(private route: ActivatedRoute, private profileService: ProfileService, private router: Router) {
   }
  findProfile() {
 
@@ -32,7 +35,8 @@ export class UserComponent implements OnInit {
  }
 
   ngOnInit() {
-
+    const id = this.route.snapshot.paramMap.get('id');
+    this.user = this.service.getUser(id);
     this.profileService.getRepoInfo(this.userName);
     this.profileService.getUserInfo();
     this.user = this.profileService.user;
